@@ -1,0 +1,13 @@
+[project]
+name = "baby-monitor"
+version = "1.0.0"
+description = "A smart gesture-monitoring tool designed specifically for parenting"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mediapipe>=0.10.31",
+    "opencv-python-headless>=4.13.0.90",
+    "pygame>=2.6.1",
+    "python-dotenv>=1.2.1",
+]
