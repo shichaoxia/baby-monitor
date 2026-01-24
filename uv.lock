@@ -29,6 +29,7 @@ version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "httpx" },
+    { name = "just-playback" },
     { name = "mediapipe" },
     { name = "opencv-python-headless" },
     { name = "python-dotenv" },
@@ -37,6 +38,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "httpx", specifier = ">=0.28.1" },
+    { name = "just-playback", specifier = ">=0.1.8" },
     { name = "mediapipe", specifier = ">=0.10.31" },
     { name = "opencv-python-headless", specifier = ">=4.13.0.90" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
@@ -148,6 +150,26 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/6f/6d/0703ccc57f3a7233505399edb88de3cbd678da106337b9fcde432b65ed60/idna-3.11.tar.gz", hash = "sha256:795dafcc9c04ed0c1fb032c2aa73654d8e8c5023a7df64a53f39190ada629902", size = 194582, upload-time = "2025-10-12T14:55:20.501Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl", hash = "sha256:771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea", size = 71008, upload-time = "2025-10-12T14:55:18.883Z" },
+]
+
+[[package]]
+name = "just-playback"
+version = "0.1.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cffi" },
+    { name = "tinytag" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a4/2d/19ffa29233196f146dd98ffcfd3751b81e43efdd6274f5fac0bdd245038d/just_playback-0.1.8.tar.gz", hash = "sha256:e5974749f10faae7bb76b3f1e3779a1369275ab179d8759dae27e9f29b410350", size = 684007, upload-time = "2024-03-13T12:03:26.603Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5f/42/5706d4750bbd6e206dfc319376c1f7b290c4f709b5954e97dc521fab81d2/just_playback-0.1.8-2-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:e5901dfed8b32cd6e007007ec818cb695bf8478a2d24c0f05150cf2625946e31", size = 372405, upload-time = "2024-08-18T18:40:46.098Z" },
+    { url = "https://files.pythonhosted.org/packages/1a/7a/cb2727d7b5e0fbb9d1369aa6d891de232cb50f4244c94149edab8f730c79/just_playback-0.1.8-2-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:f5fc3fdcd4ff1877fb8d06f5bd2afc116887bccc9ec5c712098972f52d2611b6", size = 334343, upload-time = "2024-08-18T18:40:48.377Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/3c/f34c5a589568b1c6951e3ed376990981fca2e30acab1bc8992be8a8c47d2/just_playback-0.1.8-2-cp313-cp313-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:42ef5bfa7a5372ae166c948cd1187956ce0b7b5214e07cea93fa73d5c6ffdd8b", size = 779585, upload-time = "2024-08-18T18:40:51.593Z" },
+    { url = "https://files.pythonhosted.org/packages/95/b4/28f0112302a6c3b5b54d0dbd024b02a24126f9a8dc065fd9bec7fdbc2853/just_playback-0.1.8-2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:009ea10c9676349de5438f5804c0de04e18e107e9681b6e626cc37afcd5d2d5d", size = 679658, upload-time = "2024-08-18T18:40:55.32Z" },
+    { url = "https://files.pythonhosted.org/packages/c5/b9/ef7ac078be3449c1c9b2c3091ccc28fe3920aad2437a4fa1ef473ccb448e/just_playback-0.1.8-2-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:3f6bcdd7a09ba90cc0e31e755bf818b48be517c34d98902d86df4ef4f00bde02", size = 811482, upload-time = "2024-08-18T18:40:58.927Z" },
+    { url = "https://files.pythonhosted.org/packages/04/5d/4378b911bc3b6bc3f8b60456e4f30f7acc66d8ac5a5d1d4650781aa73963/just_playback-0.1.8-2-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:6ac40de5e6db8a063103213158f2da6182cd48f31b9251278014c66c7833460f", size = 703261, upload-time = "2024-08-18T18:41:02.427Z" },
+    { url = "https://files.pythonhosted.org/packages/a9/69/c2269b71b86e95443360f49911332d2f1e5db3d05d364178b823411ecae1/just_playback-0.1.8-2-cp313-cp313-win32.whl", hash = "sha256:a58587125d0fe7a79801dc287abb78ecf7e552b11dbd540fea8a9888e5ebf8eb", size = 195350, upload-time = "2024-08-18T18:41:04.447Z" },
+    { url = "https://files.pythonhosted.org/packages/cf/4a/3533739cb5286c526cb8ee92756ac4e484c5bf966887a5e07019192b98ca/just_playback-0.1.8-2-cp313-cp313-win_amd64.whl", hash = "sha256:959fa58699ed1c5e285ec596eca41c7b608a5a51ce268c5c4b47c0cc94f53928", size = 224646, upload-time = "2024-08-18T18:41:07.148Z" },
 ]
 
 [[package]]
@@ -266,4 +288,13 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a4/a5/34a9a43f0dbc547da0b01c03df50fb36c4023a77a166f18985b364f72528/sounddevice-0.5.4-py3-none-win32.whl", hash = "sha256:4fe3be129a02e902606ee4512f642bcdbf35e122fd8fce53154cee9dbc919bf9", size = 317725, upload-time = "2026-01-21T21:09:23.051Z" },
     { url = "https://files.pythonhosted.org/packages/21/ff/bade5521ed9598b98168a143ccb24f4041f85d3562eb2b9ab6fce9b60d30/sounddevice-0.5.4-py3-none-win_amd64.whl", hash = "sha256:7e1b530cc9f6a23d045d2577c088ec9817d1518b55c8515f783683a329cec358", size = 365283, upload-time = "2026-01-21T21:09:24.398Z" },
     { url = "https://files.pythonhosted.org/packages/15/8a/f6347d06ba647a2bced7945320db564b1d2dfe16bc1110a42f03945eb4e6/sounddevice-0.5.4-py3-none-win_arm64.whl", hash = "sha256:fcddcf99d7a533d0a3b1449c00d679ff075c1561038bdd05533a2fec3dc314e8", size = 317073, upload-time = "2026-01-21T21:09:25.944Z" },
+]
+
+[[package]]
+name = "tinytag"
+version = "2.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/07/fb260bac73119f369a10e884016516d07cd760b5068e703773f83dd5e7bf/tinytag-2.2.0.tar.gz", hash = "sha256:f15b082510f6e0fc717e597edc8759d6f2d3ff6194ac0f3bcd675a9a09d9b798", size = 38120, upload-time = "2025-12-15T21:10:19.093Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/e2/9818fcebb348237389d2ac2fea97cf2b2638378a0866105a45ae9be49728/tinytag-2.2.0-py3-none-any.whl", hash = "sha256:d2cf3ef8ee0f6c854663f77d9d5f8159ee1c834c70f5ea4f214ddc4af8148f79", size = 32861, upload-time = "2025-12-15T21:10:17.63Z" },
 ]
